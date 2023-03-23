@@ -3,7 +3,7 @@ import requests
 
 headers = {
     'Content-Type': 'application/json',
-    'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuaWNrIjoiMTUw5p2O6Z2ZIiwiY3VycmVudFR5cGUiOjEsImV4cGlyZSI6MTY3ODM3NzY0NzgxOSwiaXNzIjoiNzM2MTYyNTM5OTA1MjIwNjA4IiwidGVuYW50SWQiOiIxMDAwNDQiLCJpZCI6IjczNjE2MjUzOTkwNTIyMDYwOCIsInVzZXJJZCI6IjczOTEwMDYwMjQ3ODM2MjYzMiJ9.yaIU0QbhNGhMj3AQQvj0Ege4M9cvRfoDxhWN1vEJ8QE'
+    'Authorization': 'xxxxxxxxx每次登录不一样'
 }
 
 headersuat = {

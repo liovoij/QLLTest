@@ -5,12 +5,10 @@ import openpyxl as op
 wb = op.Workbook()
 ws = wb['Sheet']
 
-
-
 url = "http://10.10.27.210/manager/order/queryOrderList"
 headers = {
     'Content-Type': 'application/json',
-    'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuaWNrIjoiMTM0MDAw5p2O6Z2Z5Liq5Lq654mIIiwiY3VycmVudFR5cGUiOjEsImV4cGlyZSI6MTY3ODI0NzYxNTQ4MiwiaXNzIjoiNzQ0NTU4ODk2MDI2MjIyNTkyIiwidGVuYW50SWQiOiIxMDAzODEiLCJpZCI6Ijc0NDU1ODg5NjAyNjIyMjU5MiIsInVzZXJJZCI6IjE2MDgzNzMzMDI2NTc0NzA0NjYifQ.sBoh0eRRVtmYv0kwD6PdStj4iLINzTh8IXEvbWpju9U'
+    'Authorization': 'xxxx每次登录不一样'
 }
 data = {
     "queryType": 2,  # 0:我的;1:我团队的;2:全部
@@ -39,8 +37,6 @@ for num in range(0, data['pageSize']):
     r_orderStatus = r_py['data']['dataList'][num]['orderStatus']
     r_thirdInfo = r_py['data']['dataList'][num]['thirdInfo']['info'][0]['label']
     print(r_buyerName, r_orderSource, r_orderType, r_orderStatus, r_thirdInfo)
-
-
 
 # print(r)
 # print(r_py)
