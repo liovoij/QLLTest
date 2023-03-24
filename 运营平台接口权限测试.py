@@ -10,9 +10,9 @@ headersuat = {
     'Content-Type': 'application/json',
     'Authorization': ''
 }
-way1 = "/manager/tenant/detail/pageList"
-url1 = "https://cloud.qianliling.com" + way1
-res1 = requests.get(url1, headers=headers)
+# way1 = "/manager/tenant/detail/pageList"
+# url1 = "https://cloud.qianliling.com" + way1
+# res1 = requests.get(url1, headers=headers)
 # print(res1.text)
 
 for line in open('way.txt', encoding='utf-8'):
